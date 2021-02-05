@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Q12() {
+
+document.write(" Q12 Write​ a ​ ​ JavaScript​ ​ function​ ​ to​ ​ chop​ ​ a ​ ​ string​ ​into​ ​ chunks​ ​ of​ ​ a ​ ​ given​ ​ length. ")
+let string = prompt("Enter string: ");
+let size = +prompt("Enter size:");
+document.write(`String:   ${string}  <br><br>`);
+
+let chop = (string, n) => {
+    let res = [];
+    for (let i = 0; i < string.length; i += n) {
+        res[i] = string.substring(i, i + n);
+    }
+
+    return res;
+}
+
+document.write("Outputstring is = ");
+
+document.write("Chopped: " + chop(string, size) + "<br>");
+}
+
+Q12()
+    </script>
+</body>
+</html>

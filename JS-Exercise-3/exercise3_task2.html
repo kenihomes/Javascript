@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Write​ ​ a ​ ​ JavaScript​ ​ program ​ that​ ​ displays​ ​ list​ ​ of​ ​ name​ ​ according​ ​ to​ ​ sports ​group.-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <script>
+        const data = [{
+            Name: 'Ravindra',
+            Sports: ['Chess', 'Cricket'],
+        },
+        {
+            Name: 'Ravi',
+            Sports: ['Cricket', 'Football'],
+        },
+        {
+            Name: 'Rishabh',
+            Sports: ['Table-Tennis', 'Football'],
+        }]
+
+        setOfSports = new Set(); //for make sepret sport array
+
+        data.forEach((singleObj) => {
+            const temp = singleObj['Sports']
+            temp.forEach((t) => {
+                setOfSports.add(t);
+            });
+        });
+
+        let outputarr = []              // itret over object 
+        setOfSports.forEach((sportsName) => {
+            let tmparry = []
+            data.forEach((singleObj) => {
+                const temp = singleObj['Sports'];
+                if (temp.includes(sportsName)) {
+                    tmparry.push(singleObj['Name'])
+                }
+            }
+            );
+            outputarr.push(new Object({ [`${sportsName}`]: tmparry }))  //make final output array
+        });
+
+        outputarr = JSON.stringify(outputarr)
+        document.write(outputarr)
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

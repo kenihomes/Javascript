@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         function Q15 () {
+             document.write("<br> ---Q15--- Write​ ​ a ​ ​ JavaScript​ ​ function​ ​ to​ ​ delete​ ​ particular​ ​object​ ​ from​ ​ array​ ​ and​ ​ add​ ​ new​ ​ object​ ​ at particular​ ​ position. Also if the position does not exist then error message should be shown to the user. <br>" )
+
+             static_array = [  {name:  "Jack" , age : 23}, {name:  "Sam" , age : 12},  {name:  "Max" , age : 20} ]
+
+             document.write("Array: "+JSON.stringify (static_array)+"<br>");
+
+             let choise = prompt("what you want 'del' or 'add")
+
+             let deletarr = (position) => static_array.splice(position, 1);
+             let addarr = (name, age) => static_array.push({name,age});
+
+             if (choise == 'del') {
+                 let pos = prompt("enter position to delet elimant");
+                 deletarr(pos);
+             }
+             else if (choise == 'add'){
+                 let name = prompt("name = ")
+                 let age = prompt("age = ")
+                 addarr(name,age)
+             }
+
+             document.write("<br>output arry is =" + JSON.stringify(static_array) )
+
+         }
+         Q15()
+    </script>
+</body>
+</html>

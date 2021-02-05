@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function Q11() {
+            document.write("Q11 11. Write​ ​ a ​ ​ JavaScript​ ​function​ ​ to​ ​ insert​ ​ a ​ ​ string​ ​ within​ ​ a ​ ​ string​ ​ at​ ​ a ​ ​ particular​ ​ position (default​ ​ is​ ​ 1). <br> <br>")
+
+            static_string = "This is a sample string"
+            document.write(`sring is = ${static_string} <br>`)
+
+            let insert_string = "  keni's"
+            let position = 4
+
+            let insert = (a, b, position) => [a.slice(0, position), b, a.slice(position)].join('');
+
+            document.write(`output sring is ${insert(static_string, insert_string, position)} <br>`)
+
+        }
+        Q11()
+
+    </script>
+</body>
+</html>

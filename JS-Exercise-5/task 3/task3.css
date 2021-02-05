@@ -1,0 +1,32 @@
+.row{
+    display: flex;
+
+}
+.box1 {
+ height: 200px;
+ width: 200px;
+ text-align: center;
+ background-color: lightblue;
+}
+
+.box2 {
+    
+    height: 200px;
+    width: 200px;
+    text-align: center;
+
+   }
+
+   .box3 {
+    background-color: lightblue;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+   }
+   
+   .box4 {
+    height: 200px;
+    width: 200px;
+    text-align: center;
+   }
+   

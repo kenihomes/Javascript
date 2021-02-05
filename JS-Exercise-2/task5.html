@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+         function Q5() {
+            Q5a = [34, 35, 45, 48, 49];
+            Q5b = [48, 55, 45, 60, 49];
+
+            document.write(`arry a = ${Q5a}`)
+            document.write(` <br /> `)
+            document.write(`arry b = ${Q5b}`)
+            document.write(` <br /> `)
+            union = [...new Set([...Q5a, ...Q5b])];
+
+            document.write(`Output = union_array :${union}`);
+            document.write(` <br /> `)
+
+            let difference = Q5a.filter(x => !Q5b.includes(x));
+            document.write(`<br />  a-b_array = ${difference}`)
+
+            let difference2 = Q5b.filter(x => !Q5a.includes(x));
+            document.write(`<br /> b-a_array = ${difference2}`)
+
+            let intersection = Q5b.filter(x => Q5a.includes(x));
+            document.write(`<br /> intersection = ${intersection}`)
+        }
+
+        Q5()
+    </script>
+</body>
+</html>

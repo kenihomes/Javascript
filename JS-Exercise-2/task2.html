@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function Q2() {
+    document.write("---Q2---Write​ ​ a ​ ​ JavaScript​ ​ program​ ​ which​ ​ accepts​ ​ a ​ ​ number​​ as​ ​ input​ ​ and​ ​ insert​ ​ dashes​ ​ (-) between​ ​ each​ ​ two​ ​ even​ ​ numbers.")
+    Q2arr = prompt("enter numbers")
+    str = Q2arr.toString()
+    ansarr = []
+    document.write(str)
+    document.write("<br />")
+    document.write("heloo")
+    for (i = 0; i <= Q2arr.length; i++) {
+        if (str[i] == str[i + 1]) {
+            ansarr.push(str[i], "-")
+        }
+        else {
+            ansarr.push(str[i])
+        }
+    }
+    document.write(ansarr)
+
+
+}
+Q2()
+    </script>
+</body>
+</html>

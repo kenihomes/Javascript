@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Q14()
+        {
+            document.write("--Q14-- Write​ ​ a ​ ​ JavaScript​ ​ function​ ​ to​ ​ print​​ array​ ​ of​ ​ object​ ​ in​ ​ ascending​ ​ order​ ​ of​ ​ age, & descending​ ​ order​ ​ of​ ​ name.​ ​ Make​ ​ array​ ​ of​ ​ object​ ​ with​ ​ three​ ​ fields​ ​which are​​: Id , name , Age ")
+
+    let static_array = [
+	{ id: 1, name:"kishan" , age: 22 },
+	{ id: 2, name:"mohit" , age: 25 },
+	{ id: 3, name:"beca" , age: 35 },
+	{ id: 4, name:"ronak" , age: 29 },
+	{ id: 5, name:"ankit" , age: 31 },
+	{ id: 6, name:"rashmin" , age: 30 },
+	{ id: 7, name:"deep" , age: 24 },
+	{ id: 8, name:"ramesh" , age: 55 },
+	{ id: 9, name:"kalpesh" , age: 59 },
+	{ id: 0, name:"nilesh" , age: 78 },
+];
+
+document.write("Array of Objects:<br> "+JSON.stringify(static_array)+"<br><br>");
+
+let ascendingAge = arr =>{
+	ans = [... arr];
+
+	ans.sort((a,b) =>{
+		return a.age - b.age;
+	});
+
+	return ans;
+}
+
+let descendingName = arr =>{
+	ans = [... arr];
+
+	ans.sort((a,b) =>{
+		return b.name.localeCompare(a.name);
+	});
+
+	return ans;
+}
+
+document.write("Output:<br>");
+
+document.write("Ascending Age: "+JSON.stringify(ascendingAge(static_array))+"<br>");
+document.write("Descending Name: "+JSON.stringify(descendingName(static_array))+"<br>");
+        }
+
+Q14()
+    </script>
+</body>
+</html>

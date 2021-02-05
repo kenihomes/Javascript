@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Q3() {
+            document.write("----Q3--- Write​ ​ a ​ ​ JavaScript​ ​ program​ ​ to​ ​ find​ ​ the​ ​ most​ ​frequent​ ​ item​ ​ of​ ​ an​ ​ array.")
+
+            Q3arr = ["1", "1", "1", "2", "3", "3", "4", "5", "6", "6", "6", "6"]
+            document.write("<br />")
+            document.write(`arry = ${Q3arr}`)
+
+            let mf = 1;
+            let m = 0;
+            let item;
+            for (let i = 0; i < Q3arr.length; i++) {
+                for (let j = i; j < Q3arr.length; j++) {
+                    if (Q3arr[i] == Q3arr[j])
+                        m++;
+                    if (mf < m) {
+                        mf = m;
+                        item = Q3arr[i];
+                    }
+                }
+                m = 0;
+            }
+            document.write("<br />")
+            document.write(`${item} ( ${mf} times ) `)
+        }
+
+
+        Q3()
+    </script>
+</body>
+</html>

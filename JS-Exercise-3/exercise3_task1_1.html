@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Write​ ​ a ​​ JavaScript​ ​ function​ ​ to​ ​ hide​ ​ email​ ​ addresses​ ​ to​ ​ protect​ ​ from​ ​ unauthorized​ ​ user. The number of star will be equal to the number of characters hidden, and make this program dynamic.-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <input type="text" id="emailid"> <br> <br> incripted email = <span id="result"></span>
+    <script>
+
+        emailid.oninput = function () {
+            const emailsplit = emailid.value.split("@")
+            email1 = emailsplit[0]
+            email2 = emailsplit[1]
+            let email1mid = ""
+            for (i = 0; i < email1.length - 2; i++) {
+                email1mid += "*"
+
+            }
+
+            incriptemail1 = email1[0] + email1mid + email1[email1.length - 1] + "@" + email2
+            result.innerHTML = incriptemail1
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function Q7() {
+            document.write("<---Q 7----  Write​ ​ a ​ ​ JavaScript​ ​ function​ ​ to​ ​ get​ ​ the​ ​ month​ ​name​ ​ from​ ​ a ​ ​ particular​ ​ date. ");
+
+            let monthArray = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+            let date = prompt("Enter date in '-' format or '/' format");
+
+            document.write("Date: " + date);
+            document.write("<bt />")
+
+            let checkMonth = date => {
+                let d;
+                if (date.includes('-')) {
+                    d = date.split('-');
+                } else {
+                    d = date.split('/');
+                }
+
+                return d[1];
+            }
+
+            document.write("Output:<br>");
+
+            document.write("Month of date " + date + " is: " + monthArray[checkMonth(date) - 1] + "<br>");
+        }
+
+        Q7()
+
+    </script>
+</body>
+</html>

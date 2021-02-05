@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Write​ ​ a ​​ pattern​ ​ that​ ​ can identify an​ ​ e-mail​ ​ address.-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <input type="text" id="emailid"> <br> <br> email = <span id="result"></span>
+
+    <script>
+        emailReg = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/
+        let i
+        emailid.oninput = function () {
+            if (emailid.value.match(emailReg)) {
+                result.innerHTML = "ok ok ok ok ok now it's look like email addres"
+                i++
+                console.log(i)
+            }
+            else {
+                result.innerHTML = "no it's not look like email addres"
+                i++
+                console.log(i)
+            }
+        }
+    </script>
+</body>
+
+</html>

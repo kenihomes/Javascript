@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Q9() {
+            document.write("<Question 9 Write​ ​ a ​ ​ JavaScript​ ​ function​ ​ to​ ​ convert​ ​ a ​ ​ Unix​ ​timestamp​ ​ to​ ​ time. <br>");
+
+            let unix = 1607518718
+
+            document.write("Unix: " + unix + "<br>");
+
+            let unix_to_time = unix => {
+                let date = new Date(unix * 1000);
+
+                return date;
+            }
+
+            document.write("Output:<br>");
+
+            document.write("Date: " + unix_to_time(unix) + "<br>");
+        }
+
+        Q9()
+    </script>
+</body>
+</html>

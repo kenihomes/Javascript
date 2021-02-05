@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--  Write​ ​ a ​​ JavaScript​ ​ function​ ​ to​ ​ remove​ ​ HTML/XML​ ​ tags​ ​ from​ ​ string.-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Script>
+
+    </Script>
+</head>
+
+<body>
+    <input type="text" id="htmlstr" placeholder="enter str"> <br> <br> output str = <span id="result"></span>
+
+    <script>
+            htmlstr.oninput= function() {
+            inputstr = htmlstr.value
+            if ((inputstr === null) || (inputstr === ''))
+                return false;
+            else
+                inputstr = inputstr.toString();
+            outputstr = inputstr.replace(/<[^>]*>/g, '');
+
+            result.innerHTML = outputstr
+        }
+
+    </script>
+
+</body>
+
+</html>

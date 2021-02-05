@@ -1,0 +1,75 @@
+<html>
+
+<head>
+    <title>kishan desai</title>
+    <script type="text/javascript">
+
+let n = prompt("enter no", 5)
+        for (i = 1; i <= n; i++) {
+            for (j = 1; j <= i; j++) {
+                document.write("*")
+            }
+            document.write("<br />");
+        }
+
+        document.write("<br />");
+        document.write("<br />");
+        document.write("<br />");
+
+        for (i = 1; i <= n; i++) {
+            for (j = n ; j >= i; j--)
+             {
+                document.write("&nbsp&nbsp")
+            }
+            for (k = 1 ; k<=i ; k++ )
+            {
+                document.write("*")
+            }
+            document.write("<br />");
+        }
+
+        document.write("<br />");
+        document.write("<br />");
+        document.write("<br />");
+
+
+        for(i = 1 ; i <= n ; i ++)
+        {
+            for (j = n ; j >= i  ; j-- )
+            {   document.write("&nbsp&nbsp")
+            }
+            for (k = 1 ; k <= i ; k++)
+            {
+                document.write("*&nbsp&nbsp")
+            }
+            document.write("<br />");
+            
+        }
+
+        document.write("<br />");
+        document.write("<br />");
+        document.write("<br />");
+
+        for(i=1,l=n ; i <= n ; i++ ){
+            for (j=1 ; j<=n ;j++)
+            { 
+                if ((j == i) || ( j == l)) {
+
+                document.write ("*");
+                }
+                else{
+                document.write ("&nbsp");
+                }
+               
+            }
+            l--
+            document.write("<br />");
+        }
+
+
+    </script>
+</head>
+
+<body></body>
+
+</html>
